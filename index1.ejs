@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Producer Website</title>
+  <script src="/public/index1.js"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 20px;
+      margin-left: 50px;
+    }
+
+    .center-heading {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    select {
+      font-size: 20px;
+      width: 275px;
+      padding: 5px;
+      margin: 50px 0;
+      background-color: #1db99f;
+      color: #fff;
+    }
+
+    img {
+      width: 550px;
+    }
+
+    .image-container {
+      float: right;
+      margin-right: 30px;
+    }
+
+    .caption {
+      font-style: italic;
+      text-align: right;
+      margin-top: 10px;
+      margin-right: 175px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="center-heading">DJ Selection</h1>
+  <p>Name: <%= name %></p>
+  <p>Email: <%= email %></p>
+  <label>Select the DJ:</label>
+  <select id="select1">
+    <option value="option1">DJ Marcos Ferreras</option>
+    <option value="option2">DJ Carolina Torrente</option>
+    <option value="option3">DJ Tito Reynoso</option>
+    <option value="option4">DJ 4</option>
+  </select>
+  <div class="container">
+    <p> DJ Marcos Ferreras is characterized by normally playing the songs of the moment...(more text here depending on the selected DJ) </p>
+    <img class="image-container" src="https://media.wired.com/photos/63f91c358695ea54b16e31d1/master/w_1920,c_limit/Spotify%E2%80%99s-AI-DJ-Is-Here-to-(Algorithmically)-Rock-Your-Party-Gear-GettyImages-586919237.jpg">
+  </div>
+  <figcaption class="caption">Photo of DJ Marcos Ferreras</figcaption>
+  <a href="/index2">Next Page</a>
+  <input type="text" id="myInput" placeholder="Press a key to continue">
+  <p id="keydownMessage"></p>
+</body>
+
+</html>

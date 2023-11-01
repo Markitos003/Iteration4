@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Producer Website</title>
+  <script src="/public/index2.js"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 20px;
+      margin-left: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .center-heading {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      grid-column: span 2;
+    }
+
+    .section {
+      padding: 20px;
+      border: 1px;
+    }
+
+    select {
+      font-size: 20px;
+      width: 275px;
+      padding: 5px;
+      background-color: #1db99f;
+      color: #fff;
+      margin-right: 30px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .center-column {
+      text-align: center;
+    }
+
+    button {
+      font-size: 60px;
+      padding: 10px;
+      margin-top: 30px;
+      background-color: #1db99f;
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 class="center-heading">Selected DJ: DJ Marcos Ferreras (this is going to be dinamic)</h1>
+  <div class="section">
+    <h2 class="center-heading">Available songs</h2>
+    <table>
+      <tr>
+        <th class="center-column">Name</th>
+        <th class="center-column">Duration (min)</th>
+        <th class="center-column">Artist</th>
+      </tr>
+      <tr>
+        <td class="center-column">Song 1</td>
+        <td class="center-column">2:07</td>
+        <td class="center-column">Artist 1</td>
+      </tr>
+      <tr>
+        <td class="center-column">Song 2</td>
+        <td class="center-column">3:01</td>
+        <td class="center-column">Artist 2</td>
+      </tr>
+      <tr>
+        <td class="center-column">Song 3</td>
+        <td class="center-column">2:56</td>
+        <td class="center-column">Artist 3</td>
+      </tr>
+      <tr>
+        <td class="center-column">Song 4</td>
+        <td class="center-column">1:59</td>
+        <td class="center-column">Artist 4</td>
+      </tr>
+      <tr>
+        <td class="center-column">Song 5</td>
+        <td class="center-column">4:01</td>
+        <td class="center-column">Artist 5</td>
+      </tr>
+      <tr>
+        <td class="center-column">Song 6</td>
+        <td class="center-column">3:41</td>
+        <td class="center-column">Artist 6</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Select the song</h2>
+    <select id="select1">
+      <option value="Song 1">Song 1</option>
+      <option value="Song 2">Song 2</option>
+      <option value="Song 3">Song 3</option>
+      <option value="Song 4">Song 4</option>
+      <option value="Song 5">Song 5</option>
+      <option value="Song 6">Song 6</option>
+    </select>
+    <h2>Select the time slot</h2>
+    <select id="select2">
+      <option value="8:00 PM">8:00 PM</option>
+      <option value="8:10 PM">8:10 PM</option>
+      <option value="8:20 PM">8:20 PM</option>
+      <option value="8:30 PM">8:30 PM</option>
+      <option value="8:40 PM">8:40 PM</option>
+      <option value="8:50 PM">8:50 PM</option>
+    </select>
+    <button id="Playlist_Button" onclick="addToPlaylist()">Add to Playlist</button>
+  </div>
+  <a href="/index3">Next Page</a>
+  <p>Welcome, <%= data.name %></p>
+  <p>Your email is: <%= data.email %></p>
+</body>
+
+</html>
